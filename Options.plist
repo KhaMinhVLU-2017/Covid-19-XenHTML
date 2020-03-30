@@ -43,6 +43,15 @@
         <key>Ma Cao</key>
         <string>Macau</string>
     </dict>
+
+    <key>name</key>
+    <integer>_size</integer>
+    <key>label</key>
+    <string>Font-size</string>
+    <key>type</key>
+    <string>edit</string>
+    <key>default</key>
+    <integer>40</integer>
 </dict>
 
 </array>

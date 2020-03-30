@@ -9,16 +9,22 @@ window.onresume = function () {
 function RenderView() {
   let id_title = document.getElementById('id_title')
   let tbody = document.getElementById('id_tbody')
-  let country = null
+  let country = 'VietNam'
+  let content_title = 'Ta cùng với ta đến trọn đời...'
 
-  id_title.innerText = 'Ta cùng với ta đến trọn đời...'
+  id_title.innerText = content_title
 
   if (typeof _country != 'undefined') {
     country = _country
   }
 
+  if (typeof _size != 'undefined') {
+    id_title.style.fontSize = `${_size}px`
+    tbody.style.fontSize = `${_size * 0.75}px`
+  }
+
   if (country != null) {
-    id_title.innerText = `Covid-19 ${_country}`
+    id_title.innerText = `Covid-19 ${country}`
     let tasks = Promise.all([
       getCases(country),
       getCaseConfirms(country),
@@ -29,16 +35,24 @@ function RenderView() {
     tasks.then(res => {
       let [cases, caseConfirms, caseRecoverds, caseDeads] = res
 
-      let rowCase = RenderRowTable('Cases', cases[0])
-      let rowCaseConfirms = RenderRowTable('Confirms', caseConfirms[0])
-      let rowCaseRecoverds = RenderRowTable('Recoverds', caseRecoverds[0])
-      let rowCaseDeads = RenderRowTable('Deads', caseDeads[0])
+      if (cases.length != 0) {
 
-      tbody.appendChild(rowCase)
-      tbody.appendChild(rowCaseConfirms)
-      tbody.appendChild(rowCaseRecoverds)
-      tbody.appendChild(rowCaseDeads)
+        let rowCase = RenderRowTable('Cases', cases[0])
+        let rowCaseConfirms = RenderRowTable('Confirms', caseConfirms[0])
+        let rowCaseRecoverds = RenderRowTable('Recoverds', caseRecoverds[0])
+        let rowCaseDeads = RenderRowTable('Deads', caseDeads[0])
+
+        tbody.appendChild(rowCase)
+        tbody.appendChild(rowCaseConfirms)
+        tbody.appendChild(rowCaseRecoverds)
+        tbody.appendChild(rowCaseDeads)
+      }
+
+      id_title.innerText = content_title
     })
+      .catch(err => {
+        id_title.innerText = content_title
+      })
   }
 }
 
