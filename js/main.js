@@ -6,13 +6,14 @@ window.onresume = function () {
   RenderView()
 };
 
+let themeColorName = 'white-shadow'
+
 function RenderView() {
   let id_title = document.getElementById('id_title')
   let tbody = document.getElementById('id_tbody')
   let id_author = document.getElementById('id_author')
   let country = 'VietNam'
   let content_title = 'Ta cùng với ta đến trọn đời...'
-  let themeColorName = 'white-shadow'
 
   id_title.innerText = content_title
 
