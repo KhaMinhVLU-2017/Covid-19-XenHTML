@@ -9,8 +9,10 @@ window.onresume = function () {
 function RenderView() {
   let id_title = document.getElementById('id_title')
   let tbody = document.getElementById('id_tbody')
+  let id_author = document.getElementById('id_author')
   let country = 'VietNam'
   let content_title = 'Ta cùng với ta đến trọn đời...'
+  let themeColorName = 'white-shadow'
 
   id_title.innerText = content_title
 
@@ -21,6 +23,18 @@ function RenderView() {
   if (typeof _size != 'undefined') {
     id_title.style.fontSize = `${_size}px`
     tbody.style.fontSize = `${_size * 0.75}px`
+    id_author.style.fontSize = `${_size * 0.75}px`
+  }
+
+  if (typeof _color != 'undefined') {
+    id_title.classList.remove(themeColorName)
+    tbody.classList.remove(themeColorName)
+    id_author.classList.remove(themeColorName)
+
+    themeColorName = themeColor(_color)
+    id_title.classList.add(themeColorName)
+    tbody.classList.add(themeColorName)
+    id_author.classList.add(themeColorName)
   }
 
   if (country != null) {

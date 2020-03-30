@@ -49,3 +49,16 @@ var getDeads = country => $.ajax({
   data: { country },
   dataType: "json"
 })
+
+var themeColor = color => {
+  switch (color) {
+    case 'white':
+      return 'white-shadow'
+    case 'dark':
+      return 'dark-shadow'
+    case 'black':
+      return 'black-shadow'
+    default:
+      return 'white-shadow'
+  }
+}

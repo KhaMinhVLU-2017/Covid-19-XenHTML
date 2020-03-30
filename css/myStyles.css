@@ -15,17 +15,28 @@ body{
 
 .title {
   font-family: CutiveMono;
-  text-shadow: 8px 4px 12px #63fe55;
   font-size: 40px;
   font-weight: bold;
-  color: white;
 }
 .title-table {
   font-family: Pacifico;
-  text-shadow: 8px 4px 12px #63fe55;
   font-size: 30px;
   font-weight: bold;
+}
+
+.white-shadow {
+  text-shadow: 8px 4px 12px #63fe55;
   color: white;
+}
+
+.black-shadow {
+  text-shadow: 8px 4px 12px white;
+  color: black;
+}
+
+.blue-shadow{
+  text-shadow: 8px 4px 12px yellow;
+  color: blue; 
 }
 
 .tbody_context > tr > td {
