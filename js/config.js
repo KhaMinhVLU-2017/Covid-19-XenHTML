@@ -54,8 +54,8 @@ var themeColor = color => {
   switch (color) {
     case 'white':
       return 'white-shadow'
-    case 'dark':
-      return 'dark-shadow'
+    case 'blue':
+      return 'blue-shadow'
     case 'black':
       return 'black-shadow'
     default:
