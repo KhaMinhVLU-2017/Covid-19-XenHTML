@@ -46,6 +46,8 @@ function RenderView() {
         tbody.appendChild(rowCaseConfirms)
         tbody.appendChild(rowCaseRecoverds)
         tbody.appendChild(rowCaseDeads)
+
+        return
       }
 
       id_title.innerText = content_title
