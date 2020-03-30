@@ -44,9 +44,10 @@
         <string>Macau</string>
     </dict>
 </dict>
+
 <dict>
     <key>name</key>
-    <integer>_size</integer>
+    <string>_size</string>
     <key>label</key>
     <string>Font-size</string>
     <key>type</key>
