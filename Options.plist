@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+
+<dict>
+    <key>name</key>
+    <string>_country</string>
+    <key>type</key>
+    <string>select</string>
+    <key>label</key>
+    <string>Country</string>
+    <key>default</key>
+    <string>Vietnam</string>
+    <key>options</key>
+    <dict>
+        <key>Việt Nam</key>
+        <string>VietNam</string>
+        <key>Tây Ban Nha</key>
+        <string>Spain</string>
+        <key>Úc</key>
+        <string>Australia</string>
+        <key>Pháp</key>
+        <string>France</string>
+        <key>Trung Quốc</key>
+        <string>China Mainland</string>
+        <key>Hồng Kông</key>
+        <string>Hong Kong</string>
+        <key>Nhật Bản</key>
+        <string>Japan</string>
+        <key>Malaysia</key>
+        <string>Malaysia</string>
+        <key>Nepal</key>
+        <string>Nepal</string>
+        <key>Singapore</key>
+        <string>Singapore</string>
+        <key>Đài Loan</key>
+        <string>South Korea</string>
+        <key>Thái Lan</key>
+        <string>Thailand</string>
+        <key>Hoa Kỳ</key>
+        <string>US</string>
+        <key>Ma Cao</key>
+        <string>Macau</string>
+    </dict>
+</dict>
+
+</array>
+</plist>

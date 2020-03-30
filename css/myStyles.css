@@ -1,0 +1,32 @@
+@font-face {
+  font-family: CutiveMono;
+  src: url('../fonts/CutiveMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+body{
+  background-color: transparent;
+}
+
+.title {
+  font-family: CutiveMono;
+  text-shadow: 8px 4px 12px #63fe55;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.title-table {
+  font-family: Pacifico;
+  text-shadow: 8px 4px 12px #63fe55;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.tbody_context > tr > td {
+  padding: 20px;
+}
